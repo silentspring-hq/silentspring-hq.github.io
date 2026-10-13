@@ -1,0 +1,15 @@
+body{color:lightpink}
+    h1{font-family: 'Brush Script MT';
+	font-size:50px;
+	color:white}
+    p{color:violet}
+    body{background-color:black}
+
+H1, h2, p {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 60px;
+	padding-right: 60px;
+	max-width: 1400px;
+}
