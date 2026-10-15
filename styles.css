@@ -1,11 +1,7 @@
-body{color:lightpink}
-    h1{font-family: 'Brush Script MT';
+h1 {
+	font-family: 'Brush Script MT', papyrus;
 	font-size:50px;
-	color:white}
-    p{color:violet}
-    body{background-color:black}
-
-H1 {
+	color: white;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -14,7 +10,22 @@ H1 {
 	max-width: 1400px;
 }
 
+body {
+	background-color:black;
+}
+
 h2 {
+	color: pink;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 60px;
+	padding-right: 60px;
+	max-width: 1400px;
+}
+
+h3 {
+	color: pink;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -24,6 +35,7 @@ h2 {
 }
 
 p {
+	color: violet;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
