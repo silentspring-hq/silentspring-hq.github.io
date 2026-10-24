@@ -35,7 +35,36 @@
 <h2>Album 1</h2>
 <p>The following batch of photo-edits were compiled to support the aesthetic direction of Chapter 1 of Silent Spring's musical material. The images aim to convey a sense of emotional longing, intensity, curiosity, and mystery. The mechanical process involved several renderings of images through Photos with a desired objective of exploring gradual distortion, inspired by PS2 and retro videogame aesthetics, and the way in which photo manipulation can obscure and re-interpret the intention of an original photograph</p>
 <br>
-<img src="images/gifs/construction.gif">
+<div class="carousel-container">
+    <div class="carousel-slide active">
+        <img src="images/eclipse.jpeg" alt="tbc">
+    </div>
+    <div class="carousel-slide">
+        <img src="images/sunset.jpeg" alt="tbc">
+    </div>
+    <div class="carousel-slide">
+        <img src="images/longing.jpeg" alt="tbc">
+    </div>
+    <div class="carousel-slide">
+        <img src="images/layers.jpeg" alt="tbc">
+    </div>
+    <div class="carousel-slide">
+        <img src="images/streetlight.jpeg" alt="tbc">
+    </div>
+    <div class="carousel-slide">
+        <img src="images/action.jpeg" alt="tbc">
+    </div>
+    <div class="carousel-slide">
+        <img src="images/labyrinth.jpeg" alt="tbc">
+    </div>
+    <div class="carousel-slide">
+        <img src="images/solar.jpeg" alt="tbc">
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
+    <button class="carousel-btn next" id="nextBtn">&#10095;</button>
+</div>
 <br>
 <img src="images/gifs/linebreak.gif">
 <br>
@@ -46,4 +75,33 @@
 <p class="footer">    
 Silent Spring reserves the rights to all of our original material and work. We encourage people to play, remix, and otherwise interact with what we share, however we will seek to remove iterative work if it is used in a harmful or otherwise malicious way. (C) 2026</p>
 </center>
+
+ <script>
+        const slides = document.querySelectorAll('.carousel-slide');
+        const nextBtn = document.getElementById('nextBtn');
+        const prevBtn = document.getElementById('prevBtn');
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            // Remove 'active' class from current slide
+            slides[currentIndex].classList.remove('active');
+            
+            // Update index and handle looping boundaries
+            if (index >= slides.length) {
+                currentIndex = 0;
+            } else if (index < 0) {
+                currentIndex = slides.length - 1;
+            } else {
+                currentIndex = index;
+            }
+            
+            // Add 'active' class to the new slide
+            slides[currentIndex].classList.add('active');
+        }
+
+        // Button event listeners
+        nextBtn.addEventListener('click', () => showSlide(currentIndex + 1));
+        prevBtn.addEventListener('click', () => showSlide(currentIndex - 1));
+    </script>
+</body>
 </html>
