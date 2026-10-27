@@ -12,6 +12,7 @@
   new fairyDustCursor();
 </script>
 
+
   
 </head>
 <body>
@@ -41,15 +42,14 @@
   
   <!-- Album Artwork and Meta Information -->
   <div class="album-header">
-    <img src="images/album1-cover.jpg" alt="Album 1 Cover" class="album-cover">
+    <img src="images/gifs/reverseearth.gif" alt="Album 1 Cover" class="album-cover">
     <div class="album-details">
       <span class="album-badge">Album</span>
-      <h2 class="album-title">Album One Title</h2>
-      <p id="current-track-title" class="track-display">Track 1: Loading...</p>
+      <h1 id="current-track-title" class="track-display">Dairy</h1>
     </div>
   </div>
   <!-- Audio Player Core (Kept hidden if using custom buttons, or visible via 'controls') -->
-  <audio id="album-player">
+  <audio id="album-player" preload="metadata">
     <source id="album-source" src="music/dairy.mp3" type="audio/mpeg">
   </audio>
 
@@ -60,14 +60,20 @@
     <button id="next-track" class="ctrl-btn" aria-label="Next Track">⏭️</button>
   </div>
 
+<div class="progress-wrap">
+  <span id="current-time">0:00</span>
+  <input type="range" id="seek-bar" min="0" max="0" value="0" step="0.1" aria-label="Seek through track">
+  <span id="duration">0:00</span>
+</div>
+
   <!-- The tracks -->
   <div class="tracklist-data" style="display: none;">
     <span class="track-item" data-src="music/dairy.mp3" data-title="dairy"></span>
-    <span class="track-item" data-src="music/abi.mp3" data-title="Abu"></span>
+    <span class="track-item" data-src="music/abi.mp3" data-title="Abi"></span>
     <span class="track-item" data-src="music/what_i_would_give.mp3" data-title="what_i_would_give"></span>
     <span class="track-item" data-src="music/flower_boy.mp3" data-title="flower_boy"></span>
     <span class="track-item" data-src="music/replace_me.mp3" data-title="replace_me"></span>
-    <span class="track-item" data-src="flares.mp3" data-title="flares"></span>
+    <span class="track-item" data-src="muaic/flares.mp3" data-title="flares"></span>
     <span class="track-item" data-src="music/crescent.mp3" data-title="crescent"></span>
   </div>
   
@@ -84,4 +90,6 @@
 <p class="footer">    
 Silent Spring reserves the rights to all of our original material and work. We encourage people to play, remix, and otherwise interact with what we share, however we will seek to remove iterative work if it is used in a harmful or otherwise malicious way. (C) 2026</p>
 </center>
+<script src="java.js"></script>
+</body>
 </html>
