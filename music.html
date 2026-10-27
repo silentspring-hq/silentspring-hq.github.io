@@ -36,6 +36,42 @@
 <h2>Chapter 1</h2>
 <p>This first set of songs was composed between late 2023, through to the Summer of 2026. It is largely inspired by darker bands from the Britpop era, such as Garbage, early Manic Street Preachers, and 00s bands such as Bloc Party. Lyrically, it is a compilation of poetry which has been written over the same time period by Chris, touching on personal themese, as well as matters important to him, such as animal experiences, and environmental justice, with inspiration from the latter particularly stemming from the BBC documentary, Under Poisoned Skies, which was directed by his friend Owen Pinnell.</p>
 <br>
+<!-- Main container for Album 1 -->
+<section class="album-section" id="album-1">
+  
+  <!-- Album Artwork and Meta Information -->
+  <div class="album-header">
+    <img src="images/album1-cover.jpg" alt="Album 1 Cover" class="album-cover">
+    <div class="album-details">
+      <span class="album-badge">Album</span>
+      <h2 class="album-title">Album One Title</h2>
+      <p id="current-track-title" class="track-display">Track 1: Loading...</p>
+    </div>
+  </div>
+  <!-- Audio Player Core (Kept hidden if using custom buttons, or visible via 'controls') -->
+  <audio id="album-player">
+    <source id="album-source" src="" type="audio/mpeg">
+  </audio>
+
+  <!-- Carousel Interface Controls -->
+  <div class="carousel-interface">
+    <button id="prev-track" class="ctrl-btn" aria-label="Previous Track">⏮️</button>
+    <button id="play-pause" class="ctrl-btn main-play" aria-label="Play/Pause">▶️</button>
+    <button id="next-track" class="ctrl-btn" aria-label="Next Track">⏭️</button>
+  </div>
+
+  <!-- The tracks -->
+  <div class="tracklist-data" style="display: none;">
+    <span class="track-item" data-src="music/dairy.mp3" data-title="dairy"></span>
+    <span class="track-item" data-src="music/abi.mp3" data-title="Abu"></span>
+    <span class="track-item" data-src="music/what_i_would_give.mp3" data-title="what_i_would_give"></span>
+    <span class="track-item" data-src="music/flower_boy.mp3" data-title="flower_boy"></span>
+    <span class="track-item" data-src="music/replace_me.mp3" data-title="replace_me"></span>
+    <span class="track-item" data-src="flares.mp3" data-title="flares"></span>
+    <span class="track-item" data-src="music/crescent.mp3" data-title="crescent"></span>
+  </div>
+  
+</section>
 <img src="images/gifs/construction.gif">
 <br>
 <img src="images/gifs/linebreak.gif">
