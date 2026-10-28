@@ -5,6 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Music</title>
   <link href="styles.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: url("images/gifs/earthbound5.gif") center / cover no-repeat fixed;
+    }
+  </style>
 <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
 <script type="module">
   import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
@@ -33,7 +40,6 @@
     <br>
 <p>Here you will find the recorded music of Silent Spring. These songs are inspired by the lifes and times of those within the band, as well as observations, fictional scenarios, and messages which we want to convey. These songs are also presented to you in a raw, self produced form, which you will find differs from the mastered versions on streaming services. You may also find rarities, exclusive tracks, and other speculative ideas that we want to share with people, outside of the formal releases that we have on distrubution services.</p>
 <hr>
-<p></p>
 <h2>Chapter 1</h2>
 <p>This first set of songs was composed between late 2023, through to the Summer of 2026. It is largely inspired by darker bands from the Britpop era, such as Garbage, early Manic Street Preachers, and 00s bands such as Bloc Party. Lyrically, it is a compilation of poetry which has been written over the same time period by Chris, touching on personal themese, as well as matters important to him, such as animal experiences, and environmental justice, with inspiration from the latter particularly stemming from the BBC documentary, Under Poisoned Skies, which was directed by his friend Owen Pinnell.</p>
 <br>
@@ -43,7 +49,7 @@
   <div class="album-header">
     <img src="images/gifs/reverseearth.gif" alt="Album 1 Cover" class="album-cover">
     <div class="album-details">
-      <span class="album-badge">Album</span>
+      <span class="album-badge"><h2>Crescent</h2></span>
       <h1 id="current-track-title" class="track-display">Dairy</h1>
     </div>
   </div>
@@ -59,9 +65,9 @@
   </div>
 
 <div class="progress-wrap">
-  <span id="current-time">0:00</span>
+  <span id="current-time" class="time-display">0:00</span>
   <input type="range" id="seek-bar" min="0" max="0" value="0" step="0.1" aria-label="Seek through track">
-  <span id="duration">0:00</span>
+  <span id="duration" class="time-display">0:00</span>
 </div>
   <!-- The tracks -->
   <div class="tracklist-data" style="display: none;">
@@ -74,7 +80,6 @@
     <span class="track-item" data-src="music/crescent.mp3" data-title="crescent"></span>
   </div>
 </section>
-<img src="images/gifs/construction.gif">
 <br>
 <img src="images/gifs/linebreak.gif">
 <br>
