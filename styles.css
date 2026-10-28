@@ -30,8 +30,7 @@ body {
 	background-color:black;
 }
 
-h2,
-.time-display {
+h2 {
 	color: pink;
 	text-align: center;
 	margin-left: auto;
@@ -46,13 +45,14 @@ h2,
     0 0 30px rgba(255, 0, 0, 0.3);
 }
 
-h3 {
+h3, 
+.time-display {
 	color: white;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 60px;
-	padding-right: 60px;
+	padding-left: 30px;
+	padding-right: 30px;
 	max-width: 1400px;
   text-shadow:
     0 0 5px #cccccc,
