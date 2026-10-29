@@ -103,6 +103,18 @@ p {
 	border-radius: 8px;
 	cursor: all-scroll;
 	padding: 5px 10px;
+	display: inline-block;
+	cursor: pointer;
+	/*starting position*/
+	transform: translateY(0);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+	transform: translateY(-4px);
+}
+
+.button:active {translateY(1px);
 }
 
 a {
